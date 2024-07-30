@@ -1,0 +1,220 @@
+/* Contenedor principal para aplicar padding y centrado */
+
+.home-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    /* Asegura que los elementos posicionados absolutamente dentro se alineen con el contenedor */
+}
+
+
+/* Estilo para el header fijo en la parte superior */
+
+.home-header {
+    background-image: url('../assets/labellogin.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #2C3E50;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Espacio en la parte superior para el contenido debajo del header */
+
+.home-content {
+    margin-top: 80px;
+    /* Asegura que el contenido no se solape con el header */
+}
+
+
+/* Estilo para el mensaje de bienvenida */
+
+.welcome-message {
+    background-image: url('../assets/labellogin.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 950px;
+    margin: 20px auto;
+    /* Centra horizontalmente */
+}
+
+
+/* Estilo para el formulario de publicación con la imagen al lado */
+
+.post-form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    /* Ajustar para dejar espacio debajo del mensaje de bienvenida */
+}
+
+
+/* Estilo para el contenedor de la imagen circular */
+
+
+/* Estilo para el contenedor de la imagen rectangular */
+
+.image-container {
+    width: 350px;
+    /* Ajusta el ancho según sea necesario */
+    height: 200px;
+    /* Ajusta la altura según sea necesario */
+    border-radius: 10px;
+    /* Ajusta el radio de borde para esquinas redondeadas, o ponlo a 0 para bordes rectos */
+    overflow: hidden;
+    /* Oculta cualquier parte de la imagen fuera del contenedor */
+    margin-right: 60px;
+    /* Espacio entre la imagen y el textarea */
+}
+
+
+/* Estilo para la imagen dentro del contenedor */
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el contenedor */
+}
+
+
+/* Estilo para el área de texto */
+
+.post-form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+/* Estilo para el área de texto */
+
+.post-form textarea {
+    width: 420px;
+    /* Tamaño fijo en píxeles o en porcentaje si se desea */
+    height: 100px;
+    /* Altura fija en píxeles */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    /* Deshabilita el redimensionamiento por parte del usuario */
+}
+
+
+/* Estilo para el botón de publicación */
+
+.post-form button {
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Estilo para la lista de publicaciones */
+
+.posts-list {
+    margin-top: 20px;
+}
+
+.post-item {
+    background-color: rgb(161, 204, 244);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 820px;
+    height: 160px;
+}
+
+
+/* Estilo para el botón de logout */
+
+.logout-button {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    color: #2C3E50;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+/* Estilo para el contenedor del textarea con box-shadow */
+
+.textarea-container {
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: white;
+    /* Fondo blanco para diferenciar el texto */
+}
+
+
+/* Estilo para el label sobre el textarea */
+
+.textarea-label {
+    position: absolute;
+    top: -10px;
+    /* Ajusta según sea necesario */
+    left: 20px;
+    /* Alinea con el padding del contenedor */
+    background-color: white;
+    /* Coincide con el fondo del contenedor */
+    padding: 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+
+/* Estilo para el textarea */
+
+.post-form textarea {
+    width: 450px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    /* Deshabilita el redimensionamiento por parte del usuario */
+    box-sizing: border-box;
+}
+
+.Mensajeria {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    left: 43%;
+}

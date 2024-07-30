@@ -1,0 +1,205 @@
+.padre {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: 65px;
+}
+
+.tamaño-imagen {
+    width: 80%;
+    height: 500px;
+    margin-top: 125px;
+    margin-left: 70px;
+}
+
+.estilo-profile {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.cajatexto {
+    background-color: #cccccc40;
+    border-color: slategray;
+    border-radius: 30px;
+    width: 100%;
+    padding: 17px;
+    border-width: 0px;
+    margin-bottom: 20px;
+}
+
+.cajatexto:focus {
+    outline: 1px solid cornflowerblue;
+    box-shadow: 0 0 10px cornflowerblue;
+}
+
+.btnform {
+    background-color: #2C3E50;
+    border-color: slategray;
+    border-radius: 30px;
+    width: 100%;
+    padding: 17px;
+    border-width: 0px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.texto {
+    font-size: 20px;
+    color: slategray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Añadir margen inferior para separar del botón */
+}
+
+.btnswicth {
+    background-color: #2C3E50;
+    border-radius: 30px;
+    padding: 8px;
+    border-width: 0;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    /* Añadir margen superior para separar del texto */
+}
+
+.card {
+    border-radius: 25px;
+    /* Ajusta el valor según la cantidad de redondeo deseada */
+}
+
+
+/* Asegúrate de que el contenedor principal del label ocupe el 100% del ancho del viewport */
+
+body,
+html {
+    margin: 0;
+    /* Elimina márgenes predeterminados del navegador */
+    padding: 0;
+    /* Elimina padding predeterminado del navegador */
+}
+
+
+/* Configuración para el header-label */
+
+.header-label {
+    background-image: url('../src/assets/labellogin.png');
+    /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center;
+    /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    color: white;
+    /* Color del texto */
+    padding: 10px 20px;
+    /* Espaciado interior del label */
+    display: flex;
+    /* Flexbox para alinear contenido */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    justify-content: space-between;
+    /* Espacio entre texto y botones */
+    width: 100vw;
+    /* Ancho del viewport */
+    box-sizing: border-box;
+    /* Incluye padding y border en el cálculo del ancho */
+    position: fixed;
+    /* Fija el label al borde superior */
+    top: 0;
+    /* Alineado al borde superior del viewport */
+    left: 0;
+    /* Alineado al borde izquierdo del viewport */
+    z-index: 1000;
+    /* Asegura que el label esté por encima de otros elementos */
+}
+
+
+/* Estilos para el texto del label */
+
+.label-text {
+    font-size: 35px;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Opcional: texto en negrita */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 33%;
+}
+
+
+/* Contenedor de los botones dentro del label */
+
+.label-buttons {
+    display: flex;
+    /* Flexbox para alinear los botones */
+}
+
+.label-button {
+    background-color: white;
+    /* Color de fondo de los botones */
+    color: #2C3E50;
+    /* Color del texto de los botones */
+    border: none;
+    /* Sin borde */
+    padding: 5px 15px;
+    /* Espaciado interior de los botones */
+    margin-left: 10px;
+    /* Espaciado entre los botones */
+    border-radius: 30px;
+    /* Esquinas redondeadas */
+    cursor: pointer;
+    /* Cursor tipo mano */
+    font-size: 16px;
+    /* Tamaño del texto de los botones */
+}
+
+.label-button:hover {
+    background-color: #f0f0f0;
+    /* Color de fondo al pasar el mouse */
+}
+
+
+/* Estilo para la sección de mensajes anteriores */
+
+.previous-messages {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #8dd1ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra alrededor de la caja */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    max-height: 300px;
+    /* Altura máxima para la caja de mensajes */
+    overflow-y: auto;
+    /* Habilita scroll vertical si el contenido supera la altura máxima */
+    width: 100%;
+}
+
+
+/* Estilo para cada mensaje individual */
+
+.message-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    /* Línea divisoria entre mensajes */
+}
+
+.message-item h5 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.message-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
